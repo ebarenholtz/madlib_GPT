@@ -1,24 +1,24 @@
+
 <html>
   <head>
-    <title>MadLib Generator</title>
+    <title>GPT-3 Madlib</title>
   </head>
   <body>
-    <h1>MadLib Generator</h1>
+    <h1>GPT-3 Madlib Generator</h1>
     <form action="https://api.openai.com/v1/engines/davinci/completions" method="POST">
-      <label for="verb">Verb</label>
-      <input type="text" name="verb" id="verb" />
-      <br />
-      <label for="noun">Noun</label>
-      <input type="text" name="noun" id="noun" />
-      <br />
-      <label for="adjective">Adjective</label>
-      <input type="text" name="adjective" id="adjective" />
-      <br />
-      <label for="adverb">Adverb</label>
-      <input type="text" name="adverb" id="adverb" />
-      <br />
-      <input type="hidden" name="prompt" value="The {{ verb }} {{ noun }} {{ adjective }} {{ adverb }}.">
-      <input type="submit" value="Generate MadLib" />
+      <label>Adjective: </label>
+      <input type="text" name="prompt" />
+      <br/>
+      <label>Noun: </label>
+      <input type="text" name="prompt" />
+      <br/>
+      <label>Verb: </label>
+      <input type="text" name="prompt" />
+      <br/>
+      <input type="hidden" name="max_tokens" value="40" />
+      <input type="hidden" name="temperature" value="0.7" />
+      <input type="hidden" name="api_key" value="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" />
+      <input type="submit" value="Generate Madlib" />
     </form>
   </body>
 </html>
