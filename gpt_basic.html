@@ -1,0 +1,27 @@
+<html> 
+  <head> 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
+  </head> 
+  <body> 
+    <script> 
+      axios({
+        method: 'post',
+        URL: 'https://api.openai.com/v1/engines/davinci/completions',
+        data: {
+          "prompt": "how are you doing today?",
+          "max_tokens": 50,
+        },
+        headers: {
+          'Authorization': 'Bearer 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',
+          'Content-Type': 'application/json',
+        }
+      })
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+    </script> 
+  </body> 
+</html>
