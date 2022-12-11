@@ -1,17 +1,15 @@
 
-<html>
-    <head>
-        <title>MadLibs</title>
-    </head>
-    <body>
-        <h1>MadLibs</h1>
-        <p>Let's play MadLibs! Fill in the following words to generate a madlib story.</p>
-        <form action="madlib_story.php">
-            Adjective: <input type="text" name="adjective"><be>
-            Verb: <input type="text" name="verb"><br>
-            Noun: <input type="text" name="noun"><be>
-            Adverb: <input type="text" name="adverb"><be>
-            <input type="submit" value="Create MadLib">
-        </form>
-    </body>
-</html>
+<script>
+  // Ask the user for several words
+  let noun1 = prompt('Please enter a noun.');
+  let noun2 = prompt('Please enter another noun.');
+  let verb1 = prompt('Please enter a verb.');
+  let verb2 = prompt('Please enter another verb.');
+  let adjective1 = prompt('Please enter an adjective.');
+  let adjective2 = prompt('Please enter another adjective.');
+
+// Incorporate the words into a madlib story
+  alert(`Once upon a time there was a ${noun1} who wanted to ${verb1} with a ${noun2}.
+  But the ${noun2} was too ${adjective1} to do it. So the ${noun1} decided to ${verb2} instead.
+  After many ${adjective2} attempts, the ${noun1} succeeded. The End.`);
+</script>
