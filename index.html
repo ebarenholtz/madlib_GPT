@@ -1,16 +1,16 @@
 <html>
-    <head>
-        <title>MadLibs</title>
-    </head>
-    <body>
-        <h1>MadLibs</h1>
-        <p>Let's play MadLibs! Fill in the following words to generate a madlib story.</p>
-        <form action="madlib_story.php">
-            Adjective: <input type="text" name="adjective"><be>
-            Verb: <input type="text" name="verb"><br>
-            Noun: <input type="text" name="noun"><be>
-            Adverb: <input type="text" name="adverb"><be>
-            <input type="submit" value="Create MadLib">
-        </form>
-    </body>
+  <head>
+    <title> Madlibs </title>
+  </head>
+
+  <body>
+    <h1> Madlibs </h1>
+
+    <form action="madlib.php" method="post">
+        <p>Verb: <input type="text" name="verb" /></p>
+        <p>Noun: <input type="text" name="noun" /></p>
+        <p>Adjective: <input type="text" name="adjective" /></p>
+        <p><input type="submit" name="submit" value="Generate"/></p>
+    </form>
+  </body>
 </html>
